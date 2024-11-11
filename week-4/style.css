@@ -1,0 +1,248 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 212);
+}
+
+.main {
+    background-color: white;
+    width: 40%;
+    height: 95%;
+    margin: 10px 370px;
+    border-radius: 10px;
+    padding-left: 20px;
+    box-shadow: 0 2px 10px rgb(177, 174, 174);
+}
+
+.image img {
+    width: 94%;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+h1 {
+    color: rgb(85, 85, 247);
+    font-size: 25px;
+    padding-top: -20px;
+}
+.mota {
+    font-size: 15px;
+    padding-top: 7px;
+}
+.gia{
+    font-size: 15px;
+    padding-top: 7px;
+    color: rgb(79, 198, 79);
+    font-weight: bold;
+    padding-bottom:7px;
+}
+.danhgia{
+    font-size: 15px;
+    padding-top: 4px;
+    padding-bottom: 7px;
+}
+.danhgia span{
+    color: rgb(224, 161, 65);
+}
+.danhgia a{
+    font-weight: bold;
+}
+.select1{
+    padding-bottom: 5px;
+    padding-top: 10px;
+    word-spacing: 10px;
+}
+.select1 button{
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 25px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(184, 200, 235);
+}
+.select2{
+    padding-bottom: 15px;
+    word-spacing: 10px;
+}
+.select2 button{
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 25px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(184, 200, 235);
+}
+.select2 .last{
+    width: 150px;
+}
+.select2 .first{
+    width: 150px;
+}
+.giohang button{
+    width: 160px;
+    height: 30px;
+    background-color: rgb(244, 49, 49);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.giohang{
+    padding-bottom: 20px;
+}
+.chitiet h4{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.chitiet ul{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.bosung h4{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.bosung button{
+    width: 160px;
+    margin-right: 10px;
+    height: 27px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(184, 200, 235);
+}
+.bosung .hang1{
+    padding-bottom: 5px;
+    word-spacing: 10px;
+}
+.bosung .hang2{
+    padding-bottom: 5px;
+    word-spacing: 10px;
+}
+.hang2 .dai{
+    width: 210px;
+}
+.bosung{
+    padding-bottom: 15px;
+}
+.noibat h4{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #1f99d2;
+}
+.noibat ul{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+.huongdan h4{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: rgb(227, 157, 45);
+}
+.huongdan h6{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.huongdan ul{
+    list-style-type: none;
+    color: blueviolet;
+    padding-bottom: 10px;
+}
+.dacbiet h4{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #e06b04;
+}
+.dacbiet ul{
+    list-style-type: none;
+    padding-bottom: 10px;
+    color: rgb(49, 190, 134);
+}
+.chiase h4{
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+.chiase button{
+    border-radius: 5px;
+    border: none;
+}
+.chiase .f{
+    width: 90px;
+    height: 26px;
+    background-color: #195d7d;
+    color: white;
+}
+.chiase .t{
+    width: 80px;
+    height: 26px;
+    background-color:rgb(84, 180, 209) ;
+    color: white;
+}
+.chiase .i{
+    width: 100px;
+    height: 26px;
+    background-color: rgb(214, 63, 144);
+    color: white;
+}
+.chiase{
+    padding-bottom: 22px;
+}
+.danhgia h4{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.danhgia textarea{
+    width: 90%;
+    height: 70px;
+    margin-bottom: 8px;
+}
+.danhgia button{
+    width: 100px;
+    height: 29px;
+    background-color: rgb(78, 152, 238);
+    border: none;
+    border-radius: 6px;
+}
+.danhgia{
+    padding-bottom: 20px;
+}
+.lienquan{
+    width: 40%;
+    margin: 10px 370px;
+    border-radius: 10px;
+}
+.lienquan h4{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.lq img{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+.lq .sp{
+    float: left;
+    padding-top: 25px;
+    font-weight: bold;
+}
+.lq .tien{
+    float: right;
+    color: rgb(39, 180, 39);
+    padding-top: 30px;
+    font-weight: bold;
+}
+
