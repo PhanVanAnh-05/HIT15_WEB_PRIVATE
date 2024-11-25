@@ -1,0 +1,307 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main{
+    padding-left: 220px;
+    padding-right: 220px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* CSS cho trang thu 1 */
+.page_1{
+    width: 100%;
+    height: 700px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 30px;
+    flex: 1;
+    align-items: center;
+}
+.logo img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.logo a{
+    font-weight: bold;
+    color: #051441;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 150px;
+}
+.menu ul li{
+    width: 80px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #635F85;
+}
+.menu li .cam{
+    color: #FF7D00;
+}
+.LS .login{
+    border: 2px solid #E7E7E7;
+    background-color: white;
+    color: #FF7D00;
+    width: 110px;
+    height: 40px;
+    border-radius: 25px;
+}
+.button{
+    border: none;
+    color: white;
+    background-color: #FF7D00;
+    width: 110px;
+    height: 40px;
+    border-radius: 25px;
+}
+.content{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.chu{
+    width: 50%;
+    margin-right: 130px;
+    padding-top: 80px;
+}
+.chu h6{
+    color: #FF7D00;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+.chu h1{
+    font-size: 45px;
+    padding-bottom: 25px;
+}
+.chu a{
+    font-size: 15px;
+    color: #79899D;
+}
+.bt button{
+    margin-right: 20px;
+}
+.bt .nut img{
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.chu .bt{
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.content .right{
+    width: 50%;
+}
+.right .image1_1{
+    width: 400px;
+    left: 900px;
+    top: 180px;
+    position: absolute;
+}
+.right .image1_2{
+    position: absolute;
+    left: 910px;
+    top: 105px;
+    width: 400px;
+}
+.right .image1_3_1{
+    position: absolute;
+    left: 1140px;
+    top: 150px;
+}
+.right .image1_3_2{
+    position: absolute;
+    left: 750px;
+    top: 220px;
+}
+.right .image1_3_3{
+    position: absolute;
+    left: 1140px;
+    top: 370px;
+}
+.right .image1_4{
+    position: absolute;
+    left: 1200px;
+    top: 300px;
+}
+.right .image1_5{
+    position: absolute;
+    left: 1080px;
+    top: 400px;
+}
+.right .image1_6{
+    position: absolute;
+    left: 750px;
+    top: 400px;
+}
+.right .image1_7{
+    position: absolute;
+    left: 920px;
+    top: 470px;
+}
+
+/* CSS cho trang thu 2 */
+
+.page_2 .main{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+}
+.left{
+    width: 50%;
+}
+.chu24{
+    width: 50%;
+}
+.left .image2_1{
+    width: 400px;
+    position: absolute;
+}
+.left .image2_2{
+    position: absolute;
+    left: 70px;
+    top: 870px;
+}
+.left .image2_3{
+    position: absolute;
+    left: 470px;
+    top: 850px;
+}
+.left .image2_4{
+    position: absolute;
+    left: 550px;
+    top: 920px;
+}
+.left .image2_5{
+    position: absolute;
+    left: 470px;
+    top: 1000px;
+}
+.chu24{
+    width: 50%;
+    padding-top: 80px;
+    padding-left: 60px;
+}
+.chu24 h6{
+    color: #FF7D00;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+.chu24 h1{
+    font-size: 45px;
+    padding-bottom: 25px;
+}
+.chu24 a{
+    font-size: 17px;
+    color: #79899D;
+}
+.chu24 .button{
+    margin-top: 45px;
+}
+
+/* CSS cho trang thu 3 */
+.page_3 .main{
+    margin-top: -80px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(233, 236, 246);
+}
+.chu{
+    width: 50%;
+    margin-top: 70px;
+}
+.chu .button{
+    margin-top: 40px;
+}
+.right{
+    width: 50%;
+}
+.right .image3_1{
+    position: absolute;
+    width: 370px;
+    margin-left: 150px;
+    margin-top: 200px;
+}
+.right .image3_2{
+    position: absolute;
+    top: 1360px;
+    left: 540px;
+}
+.right .image3_3{
+    position: absolute;
+    top: 1670px;
+    left: 650px;
+    width: 280px;
+    height: 280px;
+}
+.right .image3_4{
+    position: absolute;
+    top: 1800px;
+    left: 1050px;
+}
+
+/* CSS cho trang thu 4 */
+.page_4 .main{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.main .left{
+    width: 60%;
+}
+.left .image4_2{
+    position: absolute;
+    top: 2080px;
+    left: 200px;
+}
+.left .image4_3{
+    position: absolute;
+    top: 2340px;
+    left: 200px;
+}
+.left .image4_4{
+    position: absolute;
+    top: 2210px;
+    left: 450px;
+}
+.main .chu24{
+    width: 40%;
+    margin-top: -40px;
+}
+.chu24 .ngang{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
+.ngang img{
+    padding-right: 10px;
+}
+.ngang h2{
+    color: #FF7D00;
+    padding-right: 10px;
+}
