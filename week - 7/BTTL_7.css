@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    background-image: linear-gradient(#e3555c,rgba(153, 93, 153, 0.333));
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(7, 150px);
+    grid-template-rows: repeat(9, 50px);
+    box-shadow: 0px 0px 2px 2px rgb(168, 166, 166);
+    border: 1px solid black;
+}
+.item-1{
+    display: grid;
+    grid-column: 1/8;
+    grid-row: 1/2;
+    background-color: #D6E7D4;
+    border: 1px solid gray;
+}
+.item-2{
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 2/6;
+    background-color: #FFF2CD;
+    border: 1px solid gray;
+}
+.item-3{
+    display: grid;
+    grid-column: 5/7;
+    grid-row: 2/3;
+    background-color: #D9E8FD;
+    border: 1px solid gray;
+}
+.item-4{
+    display: grid;
+    grid-column: 5/6;
+    grid-row: 3/6;
+    background-color: #F7CDCE;
+    border: 1px solid gray;
+}
+.item-5{
+    display: grid;
+    grid-column: 6/7;
+    grid-row: 3/6;
+    background-color: #F5F5F5;
+    border: 1px solid gray;
+}
+.item-6{
+    display: grid;
+    grid-column: 7/8;
+    grid-row: 2/4;
+    background-color: #FFE6CD;
+    border: 1px solid gray;
+}
+.item-7{
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 6/7;
+    background-color: #D9E8FD;
+    border: 1px solid gray;
+}
+.item-8{
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 7/9;
+    background-color:#E2D5E9;
+    border: 1px solid gray;
+}
+.item-9{
+    display: grid;
+    grid-column: 4/7;
+    grid-row: 6/8;
+    background-color: #D6E7D4;
+    border: 1px solid gray;
+}
+.item-10{
+    display: grid;
+    grid-column: 4/7;
+    grid-row: 8/9;
+    background-color: #FFF2CD;
+    border: 1px solid gray;
+}
+.item-11{
+    display: grid;
+    grid-column: 7/8;
+    grid-row: 4/9;
+    background-color: #E2D5E9;
+    border: 1px solid gray;
+}
+.item-12{
+    display: grid;
+    grid-column: 1/8;
+    grid-row: 9/10;
+    background-color: #F7CDCE;
+    border: 1px solid gray;
+}
