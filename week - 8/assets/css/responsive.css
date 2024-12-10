@@ -1,0 +1,10 @@
+@media(max-width:1024px) {
+    main .item{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
