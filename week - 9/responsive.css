@@ -1,47 +1,90 @@
-@media screen and (max-width: 1199px){
-    .anh img{
-        object-fit: cover;
-        height: fit-content;
-    }
-    .header{
-        padding: 1%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: ;
-    }
-    .tren img{
+@media screen and (max-width: 1199px) {
+    .tren img {
         width: 80px;
         height: 80px;
     }
-    .menu{
+    .menu {
         font-size: small;
     }
-    .cha:hover .con{
+    .cha:hover .con {
         font-size: small;
         width: 100px;
         padding: 10%;
     }
-    .header .duoi{
-        
 }
-    .duoi-2{
 
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 767px) {
+    .anh img {
+        width: 100%;
     }
-}
-
-@media screen and (max-width: 991px){
-
-}
-
-@media screen and (max-width: 767px){
-    .duoi-22{
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    .logo img {
+        object-fit: contain;
+    }
+    .duoi .dong-1 {
+        font-size: 32px;
+    }
+    .dong-2 {
+        font-size: 16px !important;
+    }
+    .tren-2 p,
+    .tren-3 p,
+    .tren-4 p {
+        font-size: 32px;
+    }
+    .box .text {
+        width: 200px;
+    }
+    .duoi-22 {
+        display: block;
+        width: 440px;
+    }
+    .mobile {
+        display: flex;
+        justify-content: center;
+    }
+    .mobile .duoi-22 .box {
+        margin-bottom: 32px;
+    }
+    .nd2 {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .nd3 {
+        margin-top: 40px;
+    }
+    .duoi-3 {
         display: block;
     }
-    .duoi-3{
+
+    .img-3 {
+        display: flex;
+        justify-content: center;
+    }
+    .nd4 {
+        margin-top: 40px;
+    }
+    .duoi-4 {
         display: block;
     }
-    .duoi-4{
+    .img-4 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+    }
+    .class-content {
         display: block;
     }
 }

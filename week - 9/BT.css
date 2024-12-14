@@ -1,37 +1,47 @@
-
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.anh img{
+.anh img {
     position: relative;
     filter: brightness(0.6);
     width: 100%;
-    height: 964px;
+    height: 100vh;
+    object-fit: cover;
+    /* height: 964px; */
 }
-.header{
-    height: 964px;
+.header {
+    /* height: 964px; */
     padding: 50px;
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    font-family: "Be Vietnam Pro", sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     top: 0;
 }
-.tren{
+.tren {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.logo img{
+.header_menu {
+    padding: 0 40px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
     width: 150px;
     height: 150px;
 }
-.menu{
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,15 +50,15 @@
     font-weight: bold;
     color: white;
 }
-.con{
+.con {
     display: none;
     position: absolute;
     margin-left: -20px;
 }
-.cha{
+.cha {
     position: relative;
 }
-.cha:hover .con{
+.cha:hover .con {
     display: block;
     background-color: rgb(217, 214, 214);
     border-radius: 10px;
@@ -56,107 +66,115 @@
     width: 140px;
     text-align: right;
 }
-.cha:hover .con a{
+.cha:hover .con a {
     color: rgb(0, 0, 0);
 }
-.cha .con li a:hover{
-    color: #F06C25;
+.cha .con li a:hover {
+    color: #f06c25;
     text-decoration: underline;
 }
-.menu ul li{
+.menu ul li {
     list-style-type: none;
     margin-bottom: 10px;
 }
-ul li a{
+ul li a {
     text-decoration: none;
 }
-.header .duoi{
+.duoi {
+    position: absolute;
+    bottom: 40px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding-left: 36px;
     color: white;
     font-weight: bold;
 }
-.duoi .dong-1{
+.duoi .dong-1 {
     font-size: 50px;
 }
-.duoi .dong-2{
+.duoi .dong-2 {
     font-size: 20px;
     word-spacing: 2px;
 }
 /* Noi dung 2 */
-.nd2{
+.nd2 {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
     gap: 32px;
     padding: 0px 200px;
-    font-family: "Be Vietnam Pro", sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
-.tren-2{
+.tren-2 {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
 }
-.tren-2 p{
+.tren-2 p {
     text-shadow: 0px 5px 5px rgb(138, 134, 138);
 }
-.box .img-2 img{
+.box .img-2 img {
     width: 200px;
     height: 200px;
 }
-.duoi-21{
+.duoi-21 {
     display: flex;
     justify-content: center;
 }
-.duoi-22{
+.duoi-22 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 40px;
 }
-.box{
+.box {
     display: flex;
     padding: 10px;
     flex-direction: row;
     align-items: center;
     gap: 20px;
     border-radius: 10px;
-    box-shadow:5px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.text{
+.text {
     padding-right: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.text h2{
-    color: #F06C25;
+.text h2 {
+    color: #f06c25;
 }
-.lg img{
+.lg img {
     margin-right: 10px;
 }
 /* Noi dung 3 */
-.nd3{
+.nd3 {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
-    padding: 0px 250px;
     gap: 50px;
-    font-family: "Be Vietnam Pro", sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
-.tren-3{
+.content-actionV {
+    display: flex;
+    justify-content: center;
+}
+.tren-3 {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
     text-shadow: 0px 5px 5px rgb(138, 134, 138);
 }
-.duoi-3{
+.duoi-3 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 54px;
+    margin-bottom: 48px;
 }
-.duoi-3 .duoi-3{
+.duoi-3 .duoi-3 {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -164,11 +182,11 @@ ul li a{
 .duoi-3 .img-3 {
     position: relative;
 }
-.duoi-3 .img-3 img{
+.duoi-3 .img-3 img {
     width: 470px;
     height: 270px;
 }
-.duoi-3 .img-3 p{
+.duoi-3 .img-3 p {
     position: absolute;
     top: 0;
     padding: 15px;
@@ -177,53 +195,59 @@ ul li a{
     color: white;
 }
 /* noi dung 4 */
-.nd4{
+.nd4 {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 0 400px;
-    font-family: "Be Vietnam Pro", sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
-.tren-4{
+.tren-4 {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
     text-shadow: 0px 5px 5px rgb(138, 134, 138);
 }
-.duoi-4{
-    display: grid;
+.duoi-4 {
+    /* display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    gap: 70px;
+    gap: 70px; */
 }
-.img-4 img{
+.class-content {
+    display: flex;
+    justify-content: center;
+}
+
+.img-4 img {
     width: 300px;
     height: 300px;
 }
-.img-4{
+.img-4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 57px;
 }
-.img-42{
+.img-42 {
     text-align: center;
     margin-top: 15px;
     font-size: 30px;
     font-weight: bold;
+    margin: 28px 0 57px 0;
 }
 
 /* footer */
-.footer{
+.footer {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    border-top:1px solid #F06C25;
+    border-top: 1px solid #f06c25;
 }
-.lg-52{
+.lg-52 {
     display: flex;
     flex-direction: row;
     gap: 20px;
