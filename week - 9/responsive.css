@@ -13,9 +13,6 @@
     }
 }
 
-@media screen and (max-width: 991px) {
-}
-
 @media screen and (max-width: 767px) {
     .anh img {
         width: 100%;
@@ -68,6 +65,7 @@
     .img-3 {
         display: flex;
         justify-content: center;
+        margin-bottom: 40px;
     }
     .nd4 {
         margin-top: 40px;
