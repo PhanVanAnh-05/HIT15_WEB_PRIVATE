@@ -8,3 +8,14 @@
         grid-template-columns: auto auto;
     }
 }
+
+@media(max-width: 768px) {
+    main .item{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

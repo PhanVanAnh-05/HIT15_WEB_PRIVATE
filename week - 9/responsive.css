@@ -1,0 +1,47 @@
+@media screen and (max-width: 1199px){
+    .anh img{
+        object-fit: cover;
+        height: fit-content;
+    }
+    .header{
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: ;
+    }
+    .tren img{
+        width: 80px;
+        height: 80px;
+    }
+    .menu{
+        font-size: small;
+    }
+    .cha:hover .con{
+        font-size: small;
+        width: 100px;
+        padding: 10%;
+    }
+    .header .duoi{
+        
+}
+    .duoi-2{
+
+    }
+}
+
+@media screen and (max-width: 991px){
+
+}
+
+@media screen and (max-width: 767px){
+    .duoi-22{
+        display: block;
+    }
+    .duoi-3{
+        display: block;
+    }
+    .duoi-4{
+        display: block;
+    }
+}
