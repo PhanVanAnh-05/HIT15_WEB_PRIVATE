@@ -1,0 +1,62 @@
+@media screen and (max-width: 1199px) {
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+    .menu {
+        font-size: small;
+    }
+    .box{
+        width: 250px;
+        padding: 10px;
+    }
+    .box img{
+        width: 100%;
+        height: fit-content;
+    }
+    .noi{
+        font-size: 30px;
+    }
+    .cb{
+        width: 90px;
+        height: fit-content;
+    }
+    .nd4-duoi{
+        width: fit-content;
+    }
+    .phai  h4{
+        font-size: 20px;
+    }
+    .phai h3{
+        font-size: 15px;
+    }
+    .phai p{
+        font-size: 10px;
+    }
+    .trai5 h4{
+        font-size: 20px;
+    }
+    .trai5 h3{
+        font-size: 15px;
+    }
+    .trai5 p{
+        font-size: 10px;
+    }
+    .nd6-duoi{
+        display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(6, 250px);
+    gap: 40px
+    }
+    .cbox{
+       
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cbox{
+        display: block;
+        
+    }
+}

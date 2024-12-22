@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input = prompt("Hôm nay là ngày gì ?");
+        var day = input.toLowerCase();
+        if(input !== "") {
+            var day = input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
+            if(day === "saturday" || day === "sunday"){
+                alert(day + " is a weekend.");
+            }
+            else if(day === "monday" || day === "tuesday" || day === "wednesday" || day == "thursday" || day == "friday"){
+                alert(day + "is a working day.");
+            }
+            else{
+                alert("Not a valid day");
+            }
+        }else{
+            alert("Bạn chưa nhập ngày. ");
+        }
+    </script>
+</body>
+</html>
