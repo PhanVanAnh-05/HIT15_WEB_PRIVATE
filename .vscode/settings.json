@@ -2,5 +2,8 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "liveServer.settings.port": 5501,
-    "CodeGPT.apiKey": "CodeGPT Plus Beta"
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
 }

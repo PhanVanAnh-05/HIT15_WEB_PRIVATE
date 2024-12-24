@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", serif;
+}
+/* noi dung 1 */
+.anh img {
+    position: relative;
+    filter: brightness(0.6);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    /* height: 964px; */
+}
+.header {
+    /* height: 964px; */
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+}
+.tren {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_menu {
+    padding: 0 40px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+} 
+.menu ul li{
+    list-style-type: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.duoi {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 36px;
+    color: white;
+    font-weight: bold;
+}
+.duoi .dong-1 {
+    font-size: 50px;
+}
+.duoi .dong-2 {
+    font-size: 20px;
+    word-spacing: 2px;
+}
+.menu ul li:hover a{
+    color: #f06c25;
+}
+
+/*noi dung 2*/
+.nd2{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.nd2 .cn{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.box-1{
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 2px rgba(111, 111, 111, 0.25);
+}
+.box-1 img{
+    width: 300px;
+    height: 350px;
+    padding: 30px;
+}
+.nd2 .cbox{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.box .box-1{
+    margin-top: 40px;
+}
+.box .box-2{
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 2px rgba(111, 111, 111, 0.25);
+}
+.box-2 img{
+    width: 300px;
+    height: 350px;
+    padding: 30px;
+}
+.box:hover .box-1{
+    border: 2px solid rgba(240, 108, 37, 1)
+}
+.box:hover .box-2{
+    border: 2px solid rgba(240, 108, 37, 1)
+}
+
+/*noi dung 3*/
+.nd3{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+.nd3-tren{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.nd3-duoi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.nd3-tren .cb{
+    border: 1px solid rgb(145, 142, 142);
+    padding: 10px;
+    width: 320px;
+    height: 100px;
+    border-radius: 10px;
+}
+.nd3-duoi .cb{
+    border: 1px solid rgb(145, 142, 142);
+    padding: 10px;
+    width: 320px;
+    height: 120px;
+    border-radius: 10px;
+}
+.cb:hover{
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(240, 108, 37, 1);
+}
+
+/*noi dung 4*/
+.nd4{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.nd4-tren{
+    text-align: center;
+}
+.trai img{
+    height: 490px;
+}
+.nd4-duoi{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.nd4-duoi .trai{
+    width: 50%;
+}
+.trai img{
+    width: 100%;
+}
+.nd4-duoi .phai{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color:#333333;
+    padding: 70px;
+    height: 490px;
+}
+.phai .t{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.t h4{
+    color: #f06c25;
+    font-size: 25px;
+}
+.t h3{
+    color: white;
+    font-size: 30px;
+}
+.t p{
+    color: #959595;
+    font-size: 15px;
+    font-weight: bold;
+}
+.phai .d{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.d h4{
+    margin-top: 20px;
+    color: #f06c25;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0px 5px 5px rgb(138, 134, 138);
+}
+.d p{
+    color: #959595;
+    font-weight: bold;
+}
+
+/* noi dung  5*/
+.nd5{
+    margin-top: 100px;
+}
+.nd5-tren{
+    text-align: center;
+}
+.nd5-duoi{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.nd5-duoi .trai5{
+    width: 50%;
+    padding: 100px;
+}
+.trai5 h4{
+    color: #f06c25;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.trai5 h3{
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.trai5 p{
+    font-size: 20px;
+    color: rgba(149, 149, 149, 1);
+    font-weight: bold;
+}
+.nd5-duoi .phai5{
+    width: 50%;
+    height: 500px;
+}
+.phai5 img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* noi dung 6 */
+.nd6{
+    margin: 100px 0px;
+}
+.nd6chu{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.nd6-duoi{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 250px);
+    gap: 40px;
+}
+.anh6{
+    border: 1px solid rgb(143, 141, 141);
+    border-radius: 10px;
+    padding: 40px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.anh6 img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.box6{
+    text-align: center;
+}
+.chu6 p{
+    color: #A4A4A4;
+}
+.box6 .anh6:hover{
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(240, 108, 37, 1)
+}
+
+/*footer*/
+.footer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-top: 1px solid #f06c25;
+}
+.flg{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.flg img{
+    width: 30px;
+    height: 30px;
+}
+
+/* chinh chu */
+.noi{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0px 5px 5px rgb(138, 134, 138);
+}

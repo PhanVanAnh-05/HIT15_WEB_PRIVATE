@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //nhâp chuỗi các số từ người dung
+        let input = prompt("Nhập vào các số: ");
+
+        //tách chuỗi thành các mảng
+        let numbers = input.split(",");
+
+        //khởi tạo biến lưu trữ giá trị lớn nhất, nhỏ nhất, đếm số chẵn
+        let max = -Infinity;
+        let min = Infinity;
+        let count = 0;
+
+        //duyệt mảng
+        for (let i = 0; i < numbers.length; i++) {
+            //lấy số hiện tại
+            let number = parseInt(numbers[i]);
+            //tìm số lớn nhất
+            if (number > max) {
+                max = number;
+            }
+            //tìm số nhỏ nhất
+            if (number < min) {
+                min = number;
+            }
+            //đếm số chẵn
+            if (number % 2 === 0) {
+                count++;
+            }
+        }
+        //hiện thị kết quả
+        alert(`
+            Số lớn nhất: ${max}
+            Số nhỏ nhất: ${min}
+            Tổng số số chẵn: ${count}
+            `);
+    </script>
+</body>
+
+</html>
