@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinh số tự động</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin:0 ;
+            padding: 0px;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin:0 300px 0 300px;
+        }
+        .btt{
+            border: 3px solid #79D7BE;
+            padding: 5px 13px;
+            width: 400px;
+            outline: none;
+        }
+        .btd{
+            background-color: #79D7BE;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+        }
+        .number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin: 5px;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+        }
+        .so{
+            display: flex;
+            gap: 280px;
+        }
+
+        .even {
+            background-color: #79d7be;
+        }
+        .odd {
+            background-color: #FDDB3A;
+        }
+        .prime {
+            background-color: #FD5E53;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Sinh số tự động</h1>
+    <div>
+        <input class="btt" id="numberInput" type="number" placeholder="Nhập số lượng" />
+        <button class="btd" id="generateBtn">Tạo</button>
+    </div>
+    <div class="so">
+        <p id="resultEven"></p>
+        <p id="resultOdd"></p>
+        <p id="resultPrime"></p>
+    </div>
+    <div id="numberGrid"></div>
+
+    <script>
+        function isPrime(number) {
+            if (number < 2) return false; 
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) return false;
+            }
+            return true;
+        }
+
+        document.getElementById('generateBtn').addEventListener('click', function () {
+            const n = parseInt(document.getElementById('numberInput').value);
+            let evenCount = 0; 
+            let oddCount = 0;  
+            let primeCount = 0; 
+
+            const numberGrid = document.getElementById('numberGrid');
+            numberGrid.innerHTML = ''; 
+
+            for (let i = 0; i < n; i++) {
+                const numberBox = document.createElement('div');
+                numberBox.classList.add('number');
+                numberBox.textContent = i; 
+
+                if (isPrime(i)) {
+                    numberBox.classList.add('prime'); 
+                    primeCount++;
+                } else if (i % 2 === 0) {
+                    numberBox.classList.add('even');
+                    evenCount++;
+                } else {
+                    numberBox.classList.add('odd'); 
+                    oddCount++;
+                }
+
+                numberGrid.appendChild(numberBox);
+            }
+            
+            document.getElementById('resultEven').textContent = `Số chẵn: ${evenCount}`;
+            document.getElementById('resultOdd').textContent = `Số lẻ: ${oddCount}`;
+            document.getElementById('resultPrime').textContent = `Số nguyên tố: ${primeCount}`;
+        });
+
+    </script>
+</body>
+
+</html>
