@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai_1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #282c34;
+            color: white;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1em;
+            background-color: #2C2C54;
+            border-radius: 12px;
+            box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+
+        input {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+        .click {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .output {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        .correct {
+            background-color: green;
+            color: white;
+        }
+
+        .wrong {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Palindrome Checker</h1>
+        <input type="text" id="inputString" placeholder="Enter a string...">
+        <button onclick="checkString()">Check</button>
+        <div class="click" id="click"></div>
+        <div id="output"></div>
+    </div>
+    <script>
+        function checkString() {
+            const input = document.getElementById('inputString').value.toLowerCase();
+            const reverse = input.split('').reverse().join('');
+            const clickDiv = document.getElementById('click');
+            const outputDiv = document.getElementById('output');
+
+            clickDiv.innerHTML = '';
+            outputDiv.innerHTML = '';
+
+            if (input === reverse) {
+                clickDiv.textContent = 'Đây là palindrome!';
+            } else {
+                clickDiv.textContent = 'Không phải palindrome!';
+            }
+
+            for (let i = 0; i < input.length; i++) {
+                const span = document.createElement('span');
+                span.textContent = input[i];
+                span.className = 'output ' + (input[i] === reverse[i] ? 'correct' : 'wrong');
+                outputDiv.appendChild(span);
+            }
+        }
+    </script>
+</body>
+
+</html>
