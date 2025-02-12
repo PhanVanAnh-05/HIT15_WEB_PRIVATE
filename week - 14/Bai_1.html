@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List v2.0</title>
+    <link rel="stylesheet" href="Bai_1.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List v2.0</h1>
+        <div class="button-input">
+            <textarea id="Input" placeholder="Nhập nhiệm vụ..."></textarea>
+            <div class="under">
+                <input type="datetime-local" id="taskDate">
+                <input type="text" id="taskTag" placeholder="Tag (ví dụ: Công việc)">
+            </div>
+            <button id="addTaskBtn">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+</body>
+
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const taskInput = document.getElementById("Input");
+        const taskDate = document.getElementById("taskDate");
+        const taskTag = document.getElementById("taskTag");
+        const addTaskBtn = document.getElementById("addTaskBtn");
+        const taskList = document.getElementById("taskList");
+
+        let tasks = [];
+
+        function renderTasks() {
+            taskList.innerHTML = "";
+            tasks.forEach((task, index) => {
+                const taskItem = document.createElement("li");
+                taskItem.classList.add("task");
+                if (task.completed) taskItem.classList.add("completed");
+
+                taskItem.innerHTML = `
+    <span>${task.text} - <strong>${task.date}</strong> - <em>${task.tag}</em></span>
+    <button class="complete" onclick="toggleComplete(${index})">${task.completed ? "Undo" : "Complete"}</button>
+    <button class="edit" onclick="editTask(${index})">Edit</button>
+    <button class="delete" onclick="deleteTask(${index})">Delete</button>
+`;
+                taskList.appendChild(taskItem);
+            });
+        }
+
+        addTaskBtn.addEventListener("click", () => {
+            const text = Input.value.trim();
+            const date = taskDate.value;
+            const tag = taskTag.value.trim();
+
+            if (text === "" || date === "") {
+                alert("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+
+            tasks.push({ text, date, tag, completed: false });
+            Input.value = "";
+            taskDate.value = "";
+            taskTag.value = "";
+            renderTasks();
+        });
+
+        window.toggleComplete = (index) => {
+            tasks[index].completed = !tasks[index].completed;
+            renderTasks();
+        };
+
+        window.editTask = (index) => {
+            const newText = prompt("Chỉnh sửa nhiệm vụ:", tasks[index].text);
+            if (newText !== null) {
+                tasks[index].text = newText;
+                renderTasks();
+            }
+        };
+
+        window.deleteTask = (index) => {
+            if (confirm("Bạn có chắc chắn muốn xóa nhiệm vụ này?")) {
+                tasks.splice(index, 1);
+                renderTasks();
+            }
+        };
+
+        renderTasks();
+    });
+</script>
